@@ -11,9 +11,9 @@ const features = [
 export default function StackedFeatures() {
   return (
     <section className="relative mx-auto max-w-6xl px-4 py-24">
-      <div className="pointer-events-none absolute inset-x-0 -top-10 h-24 bg-gradient-to-b from-[#0e0f12] to-transparent" />
+      
       {/* Important: allow scroll and give height */}
-      <div className="relative space-y-8 pb-40 overflow-visible">
+       <div className="relative space-y-8 pb-40 overflow-visible">
         {features.map((f, i) => (
           <StackedCard key={f.num} feature={f} index={i} />
         ))}
