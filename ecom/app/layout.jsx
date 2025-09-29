@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "./components/layout/SiteHeader";
+import Footer from "./components/layout/Footer";
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );
