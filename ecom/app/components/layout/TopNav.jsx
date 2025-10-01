@@ -6,13 +6,13 @@ export default function TopNav() {
     <div className="w-full bg-orange-600 text-white text-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-4 py-2">
         <span className="font-medium">
-          LIMITED TIME: Certified Open Box Clicks for iPhone 15 & 16 starting from $69.
+          Prevent costly water damage TubSense stops bathtub overflows before they start.
         </span>
         <Link
-          href="/deals"
+          href="/product/tubsense"
           className="rounded-md bg-white text-orange-700 px-3 py-1 text-xs font-semibold"
         >
-          View Deals
+          Learn More
         </Link>
       </div>
     </div>
