@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ShoppingCart, User2 } from "lucide-react";
+import { Phone, Mail } from "lucide-react"; // phone + email icons
 import TopNav from "./TopNav";
 import MobileMenu from "./MobileMenu";
-import NavItem from "../ui/NavItem";
+import Image from "next/image";
 
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,62 +36,58 @@ export default function SiteHeader() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-md bg-white text-neutral-900 font-extrabold">
-              C
-            </div>
-            <span className="text-lg font-semibold tracking-wide text-white">
-              Clicks
-            </span>
+            <Image
+              src="/Logo.png"
+              alt="Clicks Logo"
+              width={128}
+              height={50}
+              className="h-auto w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <NavItem
-              label="Clicks for iPhone"
-              items={[
-                { label: "iPhone 16 Series", href: "#" },
-                { label: "iPhone 15 Series", href: "#" },
-                { label: "Older Models", href: "#" },
-              ]}
-            />
             <Link
-              href="#"
+              href="/"
               className="text-sm font-medium text-white/90 hover:text-white transition"
             >
-              Clicks for Pixel
+              Home
             </Link>
-            <NavItem
-              label="Clicks for Razr"
-              items={[
-                { label: "Razr 50", href: "#" },
-                { label: "Razr 40", href: "#" },
-              ]}
-            />
+            <Link
+              href="/about"
+              className="text-sm font-medium text-white/90 hover:text-white transition"
+            >
+              About Us
+            </Link>
+            <Link
+              href="/contact"
+              className="text-sm font-medium text-white/90 hover:text-white transition"
+            >
+              Contact Us
+            </Link>
           </nav>
 
           {/* Right side */}
-          <div className="flex items-center gap-3">
-   
-            {/* Desktop buttons */}
+          <div className="flex items-center gap-5">
+            {/* Phone */}
             <Link
-              href="/shop"
-              className=" md:inline-flex rounded-full bg-orange-600 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-500 transition"
+              href="tel:+13475587831"
+              className="flex items-center gap-2 text-white/90 hover:text-white transition text-sm"
             >
-              Shop All
+              <Phone className="h-5 w-5" />
+              +1 347-558-7831
             </Link>
 
+            {/* Email */}
             <Link
-              href="/account"
-              className=" md:inline-flex p-2 text-white/90 hover:text-white"
+              href="mailto:info@clicks.com"
+              className="flex items-center gap-2 text-white/90 hover:text-white transition text-sm"
             >
-              <User2 className="h-5 w-5" />
+              <Mail className="h-5 w-5" />
+              Email Us
             </Link>
-            <Link
-              href="/cart"
-              className=" md:inline-flex p-2 text-white/90 hover:text-white"
-            >
-              <ShoppingCart className="h-5 w-5" />
-            </Link>
+
             {/* Mobile Menu */}
             <MobileMenu />
           </div>
