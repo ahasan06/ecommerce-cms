@@ -28,7 +28,7 @@ export default function StackedCard({ feature, index = 0 }) {
             <img
               src={feature.img}
               alt={feature.title}
-              className="h-[320px] w-full object-contain md:h-[360px] lg:h-[420px]"
+              className="h-[320px] w-full object-cover md:h-[360px] lg:h-[420px]"
             />
           </div>
         </div>
