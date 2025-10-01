@@ -7,9 +7,24 @@ export const metadata = {
 };
 
 const features = [
-  { num: 1, title: "Feel satisfying real buttons", desc: "Pressing real buttons and hearing that little clicking sound feels more natural and rewarding.", img: "/feature-1.png" },
-  { num: 2, title: "Elevated premium protection", desc: "Brushed metal side keys, a microfibre lining, and a new enclosure that adds protection inside and out.", img: "/feature-2.png" },
-  { num: 3, title: "Type faster. See more.", desc: "Free up on-screen space for content while your thumbs fly over the keyboard.", img: "/feature-3.png" },
+  { 
+    num: 1, 
+    title: 'Smart Overflow Protection', 
+    desc: 'Advanced sensor technology detects rising water at the overflow drain and instantly shuts off the supply — stopping floods before they start.', 
+    img: '/feature-1.png' 
+  },
+  { 
+    num: 2, 
+    title: 'Quick & Universal Installation', 
+    desc: 'Designed to fit any overflow drain cover, TubSense connects seamlessly with your existing plumbing without special tools or major changes.', 
+    img: '/feature-2.png' 
+  },
+  { 
+    num: 3, 
+    title: 'Built to Last', 
+    desc: 'Made with high-quality materials and rigorously tested, TubSense delivers reliable protection during everyday baths and long relaxing soaks.', 
+    img: '/feature-3.png' 
+  }
 ];
 
 export default function Page() {
