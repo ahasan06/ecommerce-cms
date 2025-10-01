@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import AnimatedGlowTitle from "../ui/AnimatedGlowTitle";
 
 export default function Hero() {
   return (
@@ -18,7 +19,7 @@ export default function Hero() {
           <source src="/hero_bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0" />
-      
+
       </div>
 
       {/* Content */}
@@ -30,8 +31,14 @@ export default function Hero() {
           </svg>
         </div>
 
-        <h1 className="text-[38px] font-bold leading-[1.15] tracking-tight md:text-[56px]">
-         Stop Overflow Before It Becomes a Disaster
+
+        <AnimatedGlowTitle
+          text="TubSense"
+          className="text-[38px] font-bold leading-[1.15] tracking-tight md:text-[200px]"
+        />
+
+        <h1 className="text-[30px] font-bold leading-[1.15] max-w-xl  tracking-tight md:text-[40px]">
+          Stop Overflow Before It Becomes a Disaster
         </h1>
 
         <p className="mx-auto mt-5 max-w-xl text-lg text-white/80">
