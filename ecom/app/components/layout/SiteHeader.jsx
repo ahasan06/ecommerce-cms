@@ -6,6 +6,7 @@ import { Phone, Mail } from "lucide-react"; // phone + email icons
 import TopNav from "./TopNav";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
+import logo from '@/public/logo/logo.png'
 
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ export default function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/Logo.png"
+              src={logo}
               alt="Clicks Logo"
               width={128}
               height={50}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight, MapPin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
+import logo from '@/public/logo/logo.png'
 export default function Footer() {
   const primaryLinks = [
     ["Home", "/"],
@@ -22,7 +23,7 @@ export default function Footer() {
             <div className="md:col-span-5">
               <Link href="/" className="flex items-center gap-3">
                 <Image
-                  src="/Logo.png"
+                  src={logo}
                   alt="Clicks Logo"
                   width={128}
                   height={50}
