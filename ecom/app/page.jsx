@@ -1,6 +1,8 @@
 import React from "react";
 import StackedCard from "./components/Home/StackedCard";
 import Hero from "./components/Home/Hero";
+import VideoSection from "./components/Home/VideoSection";
+
 
 export const metadata = {
   title: "TubSense — Smart Bathtub Overflow Protection",
@@ -41,17 +43,28 @@ export default function Page() {
 
       <Hero />
 
-      <section className="relative mx-auto max-w-6xl px-4 py-24">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block mb-4 px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-blue-600/20 text-blue-400 rounded-full">
+      <section className="relative mx-auto max-w-6xl px-4 pt-24">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          {/* Badge */}
+          <span className="inline-block mb-6 px-4 py-1.5 text-xs md:text-sm font-semibold tracking-wide uppercase 
+    bg-gradient-to-r from-blue-600/30 to-indigo-600/30 text-blue-300 rounded-full shadow-sm">
             Features
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Why Choose TubSense?</h2>
-          <p className="mt-4 text-white/70">
-            Forget worries about bathroom flooding. TubSense combines smart protection, quick installation, and long-lasting
-            reliability to keep your home safe and stress-free.
+
+          {/* Title */}
+          <h2 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text 
+          bg-gradient-to-r from-blue-400 leading-16 via-cyan-300 to-indigo-400 drop-shadow-lg">
+            Why Choose TubSense?
+          </h2>
+
+          {/* Subtitle */}
+          <p className="mt-5 text-base md:text-lg text-white/70 leading-relaxed">
+            No more bathroom flooding worries. TubSense brings together smart protection,
+            quick installation, and proven durability keeping your home safe, dry,
+            and stress-free every single day.
           </p>
         </div>
+
 
         <div className="relative space-y-8 pb-40">
           {features.map((f, i) => (
@@ -59,6 +72,12 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <VideoSection
+        title="See TubSense in Action"
+        desc="From first drip to instant shutoff. This short demo shows exactly how TubSense prevents overflow."
+        src="/videos/tubsense-demo.mp4"
+        poster="/videos/tubsense-poster.jpg"
+      />
     </main>
   );
 }
