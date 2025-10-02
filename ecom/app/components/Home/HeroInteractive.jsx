@@ -1,63 +1,15 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
-
-function VideoModal({ open, onClose }) {
-  const dialogRef = useRef(null);
-
-  useEffect(() => {
-    const onKey = (e) => e.key === "Escape" && onClose();
-    if (open) window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [open, onClose]);
-
-  if (!open) return null;
-
-  return (
-    <div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4"
-      onClick={onClose}
-      aria-modal="true"
-      role="dialog"
-      aria-label="TubSense Demo Video"
-    >
-      <div
-        className="relative w-full max-w-5xl overflow-hidden rounded-2xl bg-[#0b0c0f] ring-1 ring-white/10"
-        onClick={(e) => e.stopPropagation()}
-        ref={dialogRef}
-      >
-        <button
-          onClick={onClose}
-          className="absolute right-3 top-3 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
-          aria-label="Close video"
-        >
-          ✕
-        </button>
-
-        <div className="aspect-video w-full">
-          <iframe
-            src="https://player.cloudinary.com/embed/?cloud_name=dza52gwgg&public_id=WhatsApp_Video_2025-10-01_at_13.04.26_b5b03707_filyrr&profile=cld-default"
-            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-            allowFullScreen
-            frameBorder="0"
-            className="h-full w-full"
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
+import VideoDrawer from "../ui/VideoDrawer";
 
 export default function HeroInteractive() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-   
-
-      {/* Actions: left Watch Video, right WhatsApp */}
       <div className="mt-8 flex items-center justify-center gap-4">
         <button
           onClick={() => setOpen(true)}
@@ -79,7 +31,8 @@ export default function HeroInteractive() {
         </Link>
       </div>
 
-      <VideoModal open={open} onClose={() => setOpen(false)} />
+      {/* New bottom-sheet drawer */}
+      <VideoDrawer open={open} onClose={() => setOpen(false)} />
     </>
   );
 }
