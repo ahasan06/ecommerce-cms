@@ -39,7 +39,7 @@ export default function SiteHeader() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src={logo}
-              alt="Clicks Logo"
+              alt="tubsense Logo"
               width={128}
               height={50}
               className="h-auto w-auto"
