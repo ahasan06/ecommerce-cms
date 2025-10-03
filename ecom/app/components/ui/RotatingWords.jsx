@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
-import { Bebas_Neue } from "next/font/google";
 
-const bebas = Bebas_Neue({
-    subsets: ["latin"],
-    weight: "400",
-});
 export default function RotatingWords({
     words = [],
     speed = 25,
@@ -25,7 +20,7 @@ export default function RotatingWords({
                 {doubled.map((word, i) => (
                     <span
                         key={i}
-                        className={`${bebas.className} stroke-text mx-10  font-bold tracking-wide text-2xl md:text-3xl`}
+                        className={`stroke-text mx-3 text-gray-400 font-bold tracking-wide text-2xl md:text-3xl`}
                     >
                         {word}
                     </span>
