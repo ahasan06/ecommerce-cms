@@ -20,7 +20,7 @@ export default function RotatingWords({
                 {doubled.map((word, i) => (
                     <span
                         key={i}
-                        className={`stroke-text mx-3 text-gray-400 font-bold tracking-wide text-2xl md:text-3xl`}
+                        className={`stroke-text px-3  border-l border-dotted text-gray-400 font-bold tracking-wide text-2xl md:text-3xl`}
                     >
                         {word}
                     </span>
@@ -28,16 +28,7 @@ export default function RotatingWords({
                 ))}
             </div>
 
-            {/* Fade edges */}
-            <div
-                className="pointer-events-none absolute inset-0 rounded-[999px]"
-                style={{
-                    WebkitMaskImage:
-                        "linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)",
-                    maskImage:
-                        "linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)",
-                }}
-            />
+            
         </div>
     );
 }
