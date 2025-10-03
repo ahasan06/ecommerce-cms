@@ -79,16 +79,16 @@ export default function SiteHeader() {
               <Phone className="h-5 w-5" />
               +1 347-558-7831
             </Link>
-
             {/* Email */}
-            <Link
-              href="tubsense25@gmail.com"
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=tubsense25@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/90 hover:text-white transition text-sm"
             >
               <Mail className="h-5 w-5" />
               Email Us
-            </Link>
-
+            </a>
             {/* Mobile Menu */}
             <MobileMenu />
           </div>

@@ -82,8 +82,14 @@ export default function Footer() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Mail className="h-4 w-4 opacity-80" />
-                    <a href="tubsense25@gmail.com" className="hover:text-white transition">
-                      tubsense25@gmail.com
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=tubsense25@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-white/90 hover:text-white transition text-sm"
+                    >
+                      <Mail className="h-5 w-5" />
+                      Email Us
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
