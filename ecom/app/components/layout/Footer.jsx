@@ -82,8 +82,8 @@ export default function Footer() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Mail className="h-4 w-4 opacity-80" />
-                    <a href="mailto:hello@tubsense.com" className="hover:text-white transition">
-                      hello@tubsense.com
+                    <a href="tubsense25@gmail.com" className="hover:text-white transition">
+                      tubsense25@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center gap-2">

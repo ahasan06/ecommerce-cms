@@ -82,7 +82,7 @@ export default function SiteHeader() {
 
             {/* Email */}
             <Link
-              href="mailto:info@clicks.com"
+              href="tubsense25@gmail.com"
               className="flex items-center gap-2 text-white/90 hover:text-white transition text-sm"
             >
               <Mail className="h-5 w-5" />

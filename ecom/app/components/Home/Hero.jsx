@@ -1,10 +1,10 @@
 import React from "react";
 import HeroInteractive from "./HeroInteractive";
 import AnimatedGlowTitle from "../ui/AnimatedGlowTitle";
-
+import RotatingWords from "../ui/RotatingWords";
 export default function Hero() {
   return (
-    <section className="relative mx-auto px-4 pt-24 pb-16 md:pt-28 md:pb-24 min-h-screen flex flex-col items-center justify-center text-white">
+    <section className="relative mx-auto px-4 pt-24 pb-16 md:pt-48 md:pb-10 min-h-screen flex flex-col items-center justify-between  text-white">
       {/* Desktop bg video (decorative) */}
       <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl md:rounded-3xl hidden md:block">
         <video className="h-full w-full object-cover" autoPlay muted playsInline preload="metadata">
@@ -49,6 +49,15 @@ export default function Hero() {
           </video>
         </div>
       </div>
+      {/* Rotating words */}
+
+      <div className="max-w-2xl ">
+        <RotatingWords
+          words={["Smart", "Protective", "Reliable", "Durable", "Innovative", "Safe"]}
+          interval={2000} 
+        />
+      </div>
+
     </section>
   );
 }

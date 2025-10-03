@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes scroll-x {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-x linear infinite;
+  will-change: transform;
+}
+
+/* Hover করলে pause */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+

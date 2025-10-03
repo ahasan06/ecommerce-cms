@@ -3,7 +3,6 @@ import StackedCard from "./components/Home/StackedCard";
 import Hero from "./components/Home/Hero";
 import VideoSection from "./components/Home/VideoSection";
 
-
 export const metadata = {
   title: "TubSense — Smart Bathtub Overflow Protection",
   description:
