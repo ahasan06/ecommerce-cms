@@ -10,7 +10,7 @@ export default function RotatingWords({
 
     return (
         <div
-            className="relative w-full bg-gradient-to-r from-[#1e1f25] via-[#111827] to-[#0e0f12] rounded-[999px] flex items-center overflow-hidden  shadow-inner shadow-gray-500"
+            className="relative max-w-sm md:max-w-lg bg-gradient-to-r from-[#1e1f25] via-[#111827] to-[#0e0f12] rounded-[999px] flex items-center overflow-hidden  shadow-inner shadow-gray-500"
             style={{ height }}
         >
             <div
@@ -27,8 +27,6 @@ export default function RotatingWords({
 
                 ))}
             </div>
-
-            
         </div>
     );
 }

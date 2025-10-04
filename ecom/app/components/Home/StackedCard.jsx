@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Safelist top offsets so Tailwind keeps them
-const TOPS = ['top-[200px]', 'top-[240px]', 'top-[280px]', 'top-[320px]', 'top-[360px]'];
+const TOPS = ['top-[100px]', 'top-[100px]'];
 
 export default function StackedCard({ feature, index = 0 }) {
   const top = TOPS[index] || 'top-[40px]';

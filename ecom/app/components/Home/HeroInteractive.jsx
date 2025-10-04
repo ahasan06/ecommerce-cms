@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { Phone, Mail } from "lucide-react"; 
 import VideoDrawer from "../ui/VideoDrawer";
 
 export default function HeroInteractive() {
@@ -22,12 +23,13 @@ export default function HeroInteractive() {
         </button>
 
         <Link
-          href="https://wa.me/13475587831"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=tubsense25@gmail.com"
           target="_blank"
-          className="group inline-flex items-center gap-3 rounded-full bg-[#25D366] px-6 py-3 text-base font-bold text-white shadow-lg shadow-[#25D366]/40 transition-all duration-300 hover:shadow-xl hover:shadow-[#25D366]/60 hover:scale-[1.02] active:scale-95"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-3 rounded-full bg-blue-600 px-6 py-3 text-base font-bold text-white shadow-lg shadow-blue-400/40 transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/60 hover:scale-[1.02] active:scale-95"
         >
-          <FaWhatsapp size={22} />
-          Talk to Us
+        <Mail className="h-5 w-5" />
+        Contact  Us
         </Link>
       </div>
 

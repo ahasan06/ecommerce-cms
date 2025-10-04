@@ -1,19 +1,22 @@
 "use client";
 import Link from "next/link";
-
+import { Phone, Mail } from "lucide-react"; 
 export default function TopNav() {
   return (
-    <div className="w-full bg-orange-600 text-white text-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-4 py-2">
-        <span className="font-medium">
+    <div className=" mx-auto w-full bg-blue-600 text-white text-sm">
+      <div className="flex max-w-7xl md:mx-auto items-center justify-between gap-3 px-4 py-2">
+        <span className="font-medium max-w-[60%]">
           Prevent costly water damage TubSense stops bathtub overflows before they start.
         </span>
         <Link
-          href="/product/tubsense"
-          className="rounded-md bg-white text-orange-700 px-3 py-1 text-xs font-semibold"
-        >
-          Learn More
-        </Link>
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=tubsense25@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2  transition rounded bg-white text-blue-700 hover:bg-amber-50 px-2 py-1  font-semibold"
+            >
+              <Mail className="h-5 w-5" />
+              Email Us
+            </Link> 
       </div>
     </div>
   );

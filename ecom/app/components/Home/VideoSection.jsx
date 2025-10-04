@@ -13,7 +13,7 @@ export default function VideoSection() {
         </span>
 
         {/* Title */}
-        <h2 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text 
+        <h2 className="text-5xl md:text-5xl font-extrabold text-transparent bg-clip-text 
           bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 drop-shadow-lg">
           See TubSense in Action
         </h2>
