@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Phone, Mail } from "lucide-react"; 
 export default function TopNav() {
   return (
-    <div className=" mx-auto w-full bg-blue-600 text-white text-sm">
+    <div className=" mx-auto w-full bg-[#0a0a0a] text-white text-sm">
       <div className="flex max-w-7xl md:mx-auto items-center justify-between gap-3 px-4 py-2">
         <span className="font-medium max-w-[60%]">
           Prevent costly water damage TubSense stops bathtub overflows before they start.

@@ -36,7 +36,7 @@ const features = [
 
 export default function Page() {
   return (
-    <main className="relative  text-white overflow-visible">
+    <main className="relative bg-[#0a0a0a] text-white overflow-visible">
       <Hero />
       <section className="relative mx-auto max-w-6xl px-4 md:pt-24 ">
         <div className="text-center max-w-3xl mx-auto mb-16">

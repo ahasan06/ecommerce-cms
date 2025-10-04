@@ -7,7 +7,7 @@ import Image from "next/image";
 import logo from '@/public/logo/logo2.png'
 export default function Hero() {
   return (
-    <section className="relative mx-auto px-4  py-10  md:pb-10  min-h-screen flex flex-col items-center justify-between text-white ">
+    <section className="relative  bg-[#0a0a0a] mx-auto px-4  py-10  md:pb-10  min-h-screen flex flex-col items-center justify-between text-white ">
       <Link href="/" className="flex items-center gap-3 z-10 pb-10 md:pb-0">
           <Image
             src={logo}
