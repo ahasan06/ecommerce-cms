@@ -56,7 +56,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3 text-sm text-white/70">
                 <li className="flex items-start gap-2">
                   <MapPin className="mt-0.5 h-4 w-4 opacity-80" />
-                  <span>5678 Broadway Ave, New York, NY 10001</span>
+                  <span>5678 Broadway Ave, New York</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 opacity-80" />
@@ -64,7 +64,7 @@ export default function Footer() {
                     href="mailto:info@tubsenseusa.com"
                     className="flex items-center gap-2 text-white/90 hover:text-white transition text-sm"
                   >
-                    info@tubsenseusa.com
+                    tubsense25@gmail.com
                   </a>
                 </li>
               </ul>
