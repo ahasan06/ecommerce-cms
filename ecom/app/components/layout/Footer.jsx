@@ -56,7 +56,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3 text-sm text-white/70">
                 <li className="flex items-start gap-2">
                   <MapPin className="mt-0.5 h-4 w-4 opacity-80" />
-                  <span>5678 Broadway Ave, New York</span>
+                  <span> New York</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="h-4 w-4 opacity-80" />
