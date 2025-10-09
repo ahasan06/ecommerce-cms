@@ -71,7 +71,7 @@ export default function Footer() {
                   type="submit"
                   disabled={loading}
                   aria-busy={loading}
-                  className="m-1 inline-flex items-center justify-center rounded-lg bg-blue-600 p-2.5 text-white hover:bg-blue-500 transition disabled:opacity-50"
+                  className="m-1 cursor-pointer inline-flex items-center justify-center rounded-lg bg-blue-600 p-2.5 text-white hover:bg-blue-500 transition disabled:opacity-50"
                 >
                   {loading ? (
                     <Loader2 className="h-5 w-5 animate-spin" />
