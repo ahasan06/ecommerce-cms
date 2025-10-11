@@ -3,7 +3,7 @@ import React from "react";
 
 export default function VideoSection() {
   return (
-    <section className="relative mx-auto max-w-6xl px-4 pb-24">
+    <section className="relative mx-auto max-w-6xl px-4 md:pb-24">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-14">
         {/* Badge */}

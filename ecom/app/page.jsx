@@ -3,6 +3,7 @@ import StackedCard from "./components/Home/StackedCard";
 import Hero from "./components/Home/Hero";
 import VideoSection from "./components/Home/VideoSection";
 import SiteHeader from "./components/layout/SiteHeader";
+import OrderCard from "./components/Home/OrderCard";
 
 export const metadata = {
   title: "TubSense — Smart Bathtub Overflow Protection",
@@ -38,6 +39,9 @@ export default function Page() {
   return (
     <main className="relative bg-[#0a0a0a] text-white overflow-visible">
       <Hero />
+     <section className="overflow-hidden  mt-10 py-16 md:pt-0">
+       <OrderCard/>
+     </section>
       <section className="relative mx-auto max-w-6xl px-4 md:pt-24 ">
         <div className="text-center max-w-3xl mx-auto mb-16">
           {/* Badge */}
@@ -73,6 +77,9 @@ export default function Page() {
         src="/videos/tubsense-demo.mp4"
         poster="/videos/tubsense-poster.jpg"
       />
+    <section className="overflow-hidden  py-16 md:pt-0">
+       <OrderCard/>
+     </section>
     </main>
   );
 }
