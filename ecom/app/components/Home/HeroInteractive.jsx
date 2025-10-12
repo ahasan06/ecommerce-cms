@@ -23,7 +23,7 @@ export default function HeroInteractive() {
         </button>
 
         <Link
-          href={`mailto:tubsense25@gmail.com?subject=${encodeURIComponent("TubSense inquiry")}&body=${encodeURIComponent("Hi,\n\nI’d like to know more about TubSense.")}`}
+          href={`mailto:tubsense25@gmail.com?subject=${encodeURIComponent("TubSense inquiry")}&body=${encodeURIComponent("Hi,\n\n")}`}
           className="group inline-flex items-center gap-3 rounded-full bg-blue-600 px-6 py-3 text-base font-bold text-white shadow-lg shadow-blue-400/40 transition-all duration-300 hover:shadow-xl hover:shadow-blue-600/60 hover:scale-[1.02] active:scale-95"
         >
           <Mail className="h-5 w-5" />
