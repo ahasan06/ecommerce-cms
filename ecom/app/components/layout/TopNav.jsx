@@ -9,8 +9,7 @@ export default function TopNav() {
           Prevent costly water damage TubSense stops bathtub overflows before they start.
         </span>
         <Link
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=tubsense25@gmail.com"
-              target="_blank"
+            href={`mailto:tubsense25@gmail.com?subject=${encodeURIComponent("TubSense inquiry")}&body=${encodeURIComponent("Hi,\n\nI’d like to know more about TubSense.")}`}
               rel="noopener noreferrer"
               className="flex items-center gap-2  transition rounded bg-white text-blue-700 hover:bg-amber-50 px-2 py-1  font-semibold"
             >
