@@ -5,6 +5,7 @@ import RotatingWords from "../ui/RotatingWords";
 import Link from "next/link";
 import Image from "next/image";
 import logo from '@/public/logo/logo2.png'
+import VideoSection from "./VideoSection";
 export default function Hero() {
   return (
     <section className="relative  bg-[#0a0a0a] mx-auto px-4  py-10  md:pb-10  min-h-screen flex flex-col items-center justify-between text-white ">
@@ -18,7 +19,7 @@ export default function Hero() {
       </Link>
       {/* Desktop bg video (decorative) */}
       <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl md:rounded-3xl hidden md:block">
-        <video className="h-full w-full object-cover" autoPlay muted playsInline preload="metadata">
+        <video className="h-full w-full object-cover " autoPlay muted playsInline preload="metadata">
           <source src="/hero_bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0" />
@@ -34,7 +35,7 @@ export default function Hero() {
         </div>
 
 
-        <div aria-hidden="true">
+        <div aria-hidden="true" className="hidden lg:block">
           <AnimatedGlowTitle text="TubSense" className="text-[38px] md:text-[200px] font-bold leading-[1.15] tracking-tight" />
         </div>
 
@@ -53,11 +54,9 @@ export default function Hero() {
       </div>
 
       {/* Mobile inline video (decorative) */}
-      <div className="mt-10 w-full max-w-5xl md:hidden">
+      <div className="mt-10 w-full max-w-5xl md:hidden lg:hidden">
         <div className="relative overflow-hidden rounded-2xl">
-          <video className="w-full h-full aspect-[16/9] object-cover" autoPlay muted loop playsInline preload="metadata">
-            <source src="/hero_bg.mp4" type="video/mp4" />
-          </video>
+          <VideoSection/>
         </div>
       </div>
       {/* Rotating words */}

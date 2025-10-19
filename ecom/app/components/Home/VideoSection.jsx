@@ -5,7 +5,7 @@ export default function VideoSection() {
   return (
     <section className="relative mx-auto max-w-6xl px-4 md:pb-24">
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto mb-14">
+      <div className="text-center max-w-3xl mx-auto mb-14 hidden md:block">
         {/* Badge */}
         <span className="inline-block mb-6 px-4 py-1.5 text-xs md:text-sm font-semibold tracking-wide uppercase 
           bg-gradient-to-r from-blue-600/30 to-indigo-600/30 text-blue-300 rounded-full shadow-sm">
