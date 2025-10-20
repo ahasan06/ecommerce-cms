@@ -54,7 +54,7 @@ export default function VideoDrawer({ open, onClose }) {
         <div className="px-4 pb-5">
           <div className="aspect-video w-full overflow-hidden rounded-xl ring-1 ring-white/10 bg-black/30">
             <iframe
-              src="https://player.cloudinary.com/embed/?cloud_name=dza52gwgg&public_id=WhatsApp_Video_2025-10-01_at_13.04.26_b5b03707_filyrr&profile=cld-default"
+              src="https://player.cloudinary.com/embed/?cloud_name=dna6wnekt&public_id=Tubsense_Rev1_jyqexn&profile=cld-default"
               allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
               allowFullScreen
               frameBorder="0"

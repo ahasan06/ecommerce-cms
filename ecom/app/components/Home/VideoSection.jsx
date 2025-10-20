@@ -29,7 +29,7 @@ export default function VideoSection() {
       <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/10 bg-black/30 shadow-xl">
         <div className="aspect-video w-full">
           <iframe
-            src="https://player.cloudinary.com/embed/?cloud_name=dza52gwgg&public_id=WhatsApp_Video_2025-10-01_at_13.04.26_b5b03707_filyrr&profile=cld-default"
+            src="https://player.cloudinary.com/embed/?cloud_name=dna6wnekt&public_id=Tubsense_Rev1_jyqexn&profile=cld-default"
             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
             allowFullScreen
             frameBorder="0"
